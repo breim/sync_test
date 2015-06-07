@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+# Gems
+gem 'faye'
+gem 'thin', require: false
+gem 'sync'
+gem 'responders'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -33,6 +38,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+	# Quiet assets
+	gem 'quiet_assets'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 
